@@ -1,10 +1,7 @@
 package tn.esprit.spring;
 
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertThat;
 
 import java.util.Date;
-import java.util.List ;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -149,5 +146,4 @@ Role.CHEF_DEPARTEMENT);
     
 
 }
-
 
