@@ -1,0 +1,66 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --< tn.esprit.spring:Timesheet-spring-boot-core-data-jpa-mvc-REST-1 >---
+[INFO] Building Timesheet-spring-boot-core-data-jpa-mvc-REST-1 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Deleting /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 27 source files to /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.1:jar (default-jar) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Building jar: /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.4.RELEASE:repackage (repackage) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] 
+[INFO] --< tn.esprit.spring:Timesheet-spring-boot-core-data-jpa-mvc-REST-1 >---
+[INFO] Building Timesheet-spring-boot-core-data-jpa-mvc-REST-1 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-deploy-plugin:2.8.2:deploy-file (default-cli) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Skipping Timesheet-spring-boot-core-data-jpa-mvc-REST-1
+[INFO] This project has been banned from the build due to previous failures.
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.638 s
+[INFO] Finished at: 2021-11-03T16:03:29+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy-file (default-cli) on project Timesheet-spring-boot-core-data-jpa-mvc-REST-1: /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-0.0.1-SNAPSHOT.jar not found. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

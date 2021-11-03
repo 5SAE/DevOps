@@ -1,5 +1,6 @@
 package tn.esprit.spring.services;
 
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -36,21 +37,21 @@ public class TimesheetServiceImpl implements ITimesheetService {
 	}
     
 	public void affecterMissionADepartement(int missionId, int depId) {
-		var mission = missionRepository.findById(missionId).orElseThrow(() -> new ResourceNotFoundException("Mission not found with this id : " + missionId));
-		var dep = deptRepoistory.findById(depId).orElseThrow(() -> new ResourceNotFoundException("departement not found with this id : " + depId));
+		Mission mission = missionRepository.findById(missionId).orElseThrow(() -> new ResourceNotFoundException("Mission not found with this id : " + missionId));
+		Departement dep = deptRepoistory.findById(depId).orElseThrow(() -> new ResourceNotFoundException("departement not found with this id : " + depId));
 		mission.setDepartement(dep);
 		missionRepository.save(mission);
 		
 	}
 
 	public void ajouterTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin) {
-		var timesheetPK = new TimesheetPK();
+		TimesheetPK timesheetPK = new TimesheetPK();
 		timesheetPK.setDateDebut(dateDebut);
 		timesheetPK.setDateFin(dateFin);
 		timesheetPK.setIdEmploye(employeId);
 		timesheetPK.setIdMission(missionId);
 		
-		var timesheet = new Timesheet();
+		Timesheet timesheet = new Timesheet();
 		timesheet.setTimesheetPK(timesheetPK);
 		timesheet.setValide(false); //par defaut non valide
 		timesheetRepository.save(timesheet);
@@ -68,7 +69,7 @@ public class TimesheetServiceImpl implements ITimesheetService {
 			return;
 		}
 		//verifier s'il est le chef de departement de la mission en question
-		var chefDeLaMission = false;
+		boolean chefDeLaMission = false;
 		for(Departement dep : validateur.getDepartements()){
 			if(dep.getId() == mission.getDepartement().getId()){
 				chefDeLaMission = true;
@@ -80,13 +81,13 @@ public class TimesheetServiceImpl implements ITimesheetService {
 			return;
 		}
 //
-		var timesheetPK = new TimesheetPK(missionId, employeId, dateDebut, dateFin);
-		var timesheet =timesheetRepository.findBytimesheetPK(timesheetPK);
+		TimesheetPK timesheetPK = new TimesheetPK(missionId, employeId, dateDebut, dateFin);
+		Timesheet timesheet =timesheetRepository.findBytimesheetPK(timesheetPK);
 		timesheet.setValide(true);
 		
 
 		//Comment Lire une date de la base de données
-		var dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 		System.getLogger("dateDebut : " + dateFormat.format(timesheet.getTimesheetPK().getDateDebut()));
 		
 	}
@@ -100,5 +101,6 @@ public class TimesheetServiceImpl implements ITimesheetService {
 	public List<Employe> getAllEmployeByMission(int missionId) {
 		return timesheetRepository.getAllEmployeByMission(missionId);
 	}
+
 
 }
