@@ -100,7 +100,7 @@ Role.CHEF_DEPARTEMENT);
 
     @Test
   public  void DesaffecterEmployeDuDepartement() {
-       // Employe employe = new Employe("houda", "bettayeb", "houdabettayeb@esprit.tn", true, Role.CHEF_DEPARTEMENT);
+        Employe employe = new Employe("houda", "bettayeb", "houdabettayeb@esprit.tn", true, Role.CHEF_DEPARTEMENT);
         employeService.ajouterEmploye(employe);
         Entreprise entreprise = new Entreprise("premiére entreprise", "raison");
         Departement departement = new Departement("Geo");
