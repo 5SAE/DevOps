@@ -1,0 +1,73 @@
+pipeline {
+    agent any
+
+    tools {
+        maven "MAVEN_HOME"
+    }
+
+    stages {
+        stage('clone') {
+            steps {
+                git branch: 'houdabettayeb', credentialsId: '217d7d3e-5567-446f-bfdb-e040ed916488', url: 'https://github.com/5SAE/DevOps'
+            }
+        }
+        
+        stage('test') {
+            steps {
+                
+                sh "mvn test"
+            }
+        }
+        
+        
+        stage('build') {
+            steps {
+                
+                sh "mvn clean install"
+            }
+    }
+   stage('SonarQube analysis') {
+           steps {
+               sh 'mvn sonar:sonar'
+                      }
+                  }
+                  
+                  
+                  stage("publish to nexus") {
+            steps {
+              
+    
+        nexusArtifactUploader artifacts:[
+            
+            [
+                artifactId: 'Timesheet-spring-boot-core-data-jpa-mvc-REST-1',
+                classifier: '', 
+                file: 'target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.war', 
+                type: 'war'
+                ]
+            ],
+            
+            credentialsId: 'nexus3',
+            groupId: 'tn.esprit.spring', 
+            nexusUrl: 'localhost:8081',
+            nexusVersion: 'nexus3',
+            protocol: 'http',
+            repository: 'timesheet',
+            version: '0.0.1-SNAPSHOT'
+                   
+                
+            }
+        }
+    
+}
+
+
+post {
+    always{
+    cleanWs()
+    }
+     failure {  
+             mail bcc: '', body: "<b>Example</b><br>Project: ${env.JOB_NAME} <br>Build Number: ${env.BUILD_NUMBER} <br> URL de build: ${env.BUILD_URL}", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "ERROR CI: Project name -> ${env.JOB_NAME}", to: "houda.bettayeb@esprit.tn";  
+         }
+    }
+}

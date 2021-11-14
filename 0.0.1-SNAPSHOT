@@ -1,8 +1,8 @@
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] --< tn.esprit.spring:Timesheet-spring-boot-core-data-jpa-mvc-REST-1 >---
-[INFO] Building Timesheet-spring-boot-core-data-jpa-mvc-REST-1 0.0.1-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Building Timesheet-spring-boot-core-data-jpa-mvc-REST-1 1.0
+[INFO] --------------------------------[ war ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
 [INFO] Deleting /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target
@@ -35,15 +35,20 @@
 [INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] 
-[INFO] --- maven-jar-plugin:3.1.1:jar (default-jar) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
-[INFO] Building jar: /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.jar
+[INFO] --- maven-war-plugin:3.2.2:war (default-war) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [Timesheet-spring-boot-core-data-jpa-mvc-REST-1] in [/Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/src/main/webapp]
+[INFO] Webapp assembled in [169 msecs]
+[INFO] Building war: /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-1.0.war
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.4.RELEASE:repackage (repackage) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --< tn.esprit.spring:Timesheet-spring-boot-core-data-jpa-mvc-REST-1 >---
-[INFO] Building Timesheet-spring-boot-core-data-jpa-mvc-REST-1 0.0.1-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Building Timesheet-spring-boot-core-data-jpa-mvc-REST-1 1.0
+[INFO] --------------------------------[ war ]---------------------------------
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy-file (default-cli) @ Timesheet-spring-boot-core-data-jpa-mvc-REST-1 ---
 [INFO] 
@@ -54,10 +59,10 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.715 s
-[INFO] Finished at: 2021-11-03T23:36:03+01:00
+[INFO] Total time:  5.833 s
+[INFO] Finished at: 2021-11-04T17:52:47+01:00
 [INFO] ------------------------------------------------------------------------
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy-file (default-cli) on project Timesheet-spring-boot-core-data-jpa-mvc-REST-1: /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-0.0.1-SNAPSHOT.jar not found. -> [Help 1]
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.8.2:deploy-file (default-cli) on project Timesheet-spring-boot-core-data-jpa-mvc-REST-1: /Users/macbookprohouda/Documents/workspace-sts-3.9.12.RELEASEhouda/TimesheetProject/target/Timesheet-spring-boot-core-data-jpa-mvc-REST-1-0.0.1-SNAPSHOT.war not found. -> [Help 1]
 [ERROR] 
 [ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
 [ERROR] Re-run Maven using the -X switch to enable full debug logging.
