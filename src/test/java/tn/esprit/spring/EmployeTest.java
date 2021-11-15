@@ -24,7 +24,7 @@ import tn.esprit.spring.services.EntrepriseServiceImpl;
 @SpringBootTest
 @RunWith(SpringRunner.class)
 
-//public class EmployeTest {
+public class EmployeTest {
 	@Autowired
     private EmployeRepository employeRepository;
     @Autowired
@@ -33,7 +33,7 @@ import tn.esprit.spring.services.EntrepriseServiceImpl;
     private ContratRepository contratRepository;
     @Autowired
     EntrepriseServiceImpl entrepriseService;
-    //private final static Logger l = LogManager.getLogger(EmployeTest.class);
+    private final static Logger l = LogManager.getLogger(EmployeTest.class);
 
     @Test
   public  void ajoutEmploye() {
