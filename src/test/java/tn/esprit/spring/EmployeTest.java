@@ -56,9 +56,9 @@ public class EmployeTest {
     @Test
   //public  void AjouterContrat() {
       //  Date date = new Date();
-        /Contrat contrat = new Contrat(date, "CDI", 20000);
+       / /Contrat contrat = new Contrat(date, "CDI", 20000);
         int resultat = employeService.ajouterContrat(contrat);
-        Assert.assertEquals(resultat, contrat.getReference() );
+       / Assert.assertEquals(resultat, contrat.getReference() );
         l.info("le contrat ajoute avec succes");
     }
 
