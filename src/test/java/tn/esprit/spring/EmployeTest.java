@@ -54,8 +54,8 @@ public class EmployeTest {
     }
 
     @Test
-  public  void AjouterContrat() {
-        Date date = new Date();
+  //public  void AjouterContrat() {
+      //  Date date = new Date();
         Contrat contrat = new Contrat(date, "CDI", 20000);
         int resultat = employeService.ajouterContrat(contrat);
         Assert.assertEquals(resultat, contrat.getReference() );
@@ -63,9 +63,9 @@ public class EmployeTest {
     }
 
     @Test
-   public void affecterContratAEmploye() {
+  // public void affecterContratAEmploye() {
         Employe employe = new Employe("houda", "bettayeb", "houda.bettayeb@esprit.tn", true, 
-Role.CHEF_DEPARTEMENT);
+//Role.CHEF_DEPARTEMENT);
         Date date = new Date();
         Contrat contrat = new Contrat(date, "CDD", 1000);
         employeService.ajouterEmploye(employe);
