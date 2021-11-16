@@ -61,13 +61,7 @@
 				<configuration>
         <layout>MODULE</layout>
     </configuration>
-    <executions>
-        <execution>
-            <goals>
-                <goal>repackage</goal>
-            </goals>
-        </execution>
-    </executions>
+    
 			</plugin>
 			<plugin>
         <groupId>org.apache.maven.plugins</groupId>
