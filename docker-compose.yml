@@ -1,0 +1,28 @@
+version: "2"
+services:
+  database:
+    image: mysql:latest
+    container_name: timesheetdatabase
+    ports:
+      - 3366:3306
+    environment:
+      - MYSQL_DATABASE=houdadatabase
+      - MYSQL_USER=houda
+      - MYSQL_PASSWORD=houda
+      - MYSQL_ROOT_PASSWORD=roothouda
+
+  web:
+    image: houdabettayeb/spring:v1
+    container_name: timesheetweb
+    ports:
+      - 8089:8080
+    depends_on:
+      - database
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://database:3306/houdadatabase?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true
+      - DATABASE_NAME=houdadatabse
+      - DATABASE_PORT=3306
+      - DATABASE_USER=houda
+      - SPRING_DATASOURCE_USERNAME=houda
+      - SPRING_DATASOURCE_PASSWORD=houda
+  

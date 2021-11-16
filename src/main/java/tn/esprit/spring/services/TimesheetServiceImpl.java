@@ -60,14 +60,14 @@ public class TimesheetServiceImpl implements ITimesheetService {
 
 	
 	public void validerTimesheet(int missionId, int employeId, Date dateDebut, Date dateFin, int validateurId) {
-		System.getLogger("In valider Timesheet");
+		//System.getLogger("In valider Timesheet");
 		Employe validateur = employeRepository.findById(validateurId).orElseThrow(() -> new ResourceNotFoundException("mission not found with this id : " + missionId));
 		Mission mission = missionRepository.findById(missionId).orElseThrow(() -> new ResourceNotFoundException("mission not found with this id : " + missionId));
 		//verifier s'il est un chef de departement (interet des enum)
-		if(!validateur.getRole().equals(Role.CHEF_DEPARTEMENT)){
-			System.getLogger("l'employe doit etre chef de departement pour valider une feuille de temps !");
-			return;
-		}
+		//if(!validateur.getRole().equals(Role.CHEF_DEPARTEMENT)){
+			//System.getLogger("l'employe doit etre chef de departement pour valider une feuille de temps !");
+			//return;
+		//}
 		//verifier s'il est le chef de departement de la mission en question
 		boolean chefDeLaMission = false;
 		for(Departement dep : validateur.getDepartements()){
@@ -76,10 +76,10 @@ public class TimesheetServiceImpl implements ITimesheetService {
 				break;
 			}
 		}
-		if(!chefDeLaMission){
-			System.getLogger("l'employe doit etre chef de departement de la mission en question");
-			return;
-		}
+		//if(!chefDeLaMission){
+			//System.getLogger("l'employe doit etre chef de departement de la mission en question");
+			//return;
+		//}
 //
 		TimesheetPK timesheetPK = new TimesheetPK(missionId, employeId, dateDebut, dateFin);
 		Timesheet timesheet =timesheetRepository.findBytimesheetPK(timesheetPK);
@@ -88,7 +88,7 @@ public class TimesheetServiceImpl implements ITimesheetService {
 
 		//Comment Lire une date de la base de données
 		DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-		System.getLogger("dateDebut : " + dateFormat.format(timesheet.getTimesheetPK().getDateDebut()));
+		//System.getLogger("dateDebut : " + dateFormat.format(timesheet.getTimesheetPK().getDateDebut()));
 		
 	}
 
