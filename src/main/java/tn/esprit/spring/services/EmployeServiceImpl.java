@@ -140,14 +140,27 @@ public class EmployeServiceImpl implements IEmployeService {
 	public Double getSalaireMoyenByDepartementId(int departementId) {
 		return employeRepository.getSalaireMoyenByDepartementId(departementId);
 	}
-	
+
 	public List<Timesheet> getTimesheetsByMissionAndDate(Employe employe, Mission mission, Date dateDebut,
 			Date dateFin) {
-		return timesheetRepository.getTimesheetsByMissionAndDate(employe, mission, dateDebut, dateFin);
+		return timesheetRepository.getTimesheetsByMissionAndDate( mission, dateDebut, dateFin);
+
 	}
 
 	public List<Employe> getAllEmployes() {
 				return (List<Employe>) employeRepository.findAll();
+	}
+
+
+
+	public int ajouterMission(Mission mission) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void deleteMissionById(int missionId) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
