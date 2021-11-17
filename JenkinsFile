@@ -11,12 +11,6 @@ pipeline {
         dockerImage = '' 
     }
 
-    stages {
-        stage('clone') {
-            steps {
-                git branch: 'houdabettayeb', credentialsId: 'gitcred', url: 'https://github.com/5SAE/DevOps'
-            }
-        }
         
         stage('test') {
             steps {
