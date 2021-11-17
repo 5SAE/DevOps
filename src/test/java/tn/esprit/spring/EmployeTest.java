@@ -26,9 +26,9 @@ import tn.esprit.spring.services.EntrepriseServiceImpl;
 
 public class EmployeTest {
 	@Autowired
- //   private EmployeRepository employeRepository;
+    private EmployeRepository employeRepository;
     @Autowired
-   // private EmployeServiceImpl employeService;
+    private EmployeServiceImpl employeService;
     @Autowired
     private ContratRepository contratRepository;
     @Autowired
