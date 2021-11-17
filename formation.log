@@ -1,0 +1,16 @@
+2021- 11-15 22:25:15 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:87):87 - affichage c: tn.esprit.spring.entities.Contrat@4b8a0d03
+2021- 11-15 22:25:15 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:89):89 - test add contrat success
+2021- 11-15 22:25:15 tn.esprit.spring.ContratTest.getAllTest(ContratTest.java:44):44 - entring to test getAllContrats
+2021- 11-17 16:00:14 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:86):86 - affichage c: tn.esprit.spring.entities.Contrat@48692405
+2021- 11-17 16:00:14 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:88):88 - test add contrat success
+2021- 11-17 16:00:14 tn.esprit.spring.ContratTest.getAllTest(ContratTest.java:43):43 - entring to test getAllContrats
+2021- 11-17 16:01:42 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:86):86 - affichage c: tn.esprit.spring.entities.Contrat@54f373d4
+2021- 11-17 16:01:42 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:88):88 - test add contrat success
+2021- 11-17 16:01:42 tn.esprit.spring.ContratTest.getAllTest(ContratTest.java:43):43 - entring to test getAllContrats
+2021- 11-17 16:04:39 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:87):87 - affichage c: Contrat [reference=24, dateDebut=Wed Nov 17 16:04:39 CET 2021, typeContrat=CDI, employe=null, salaire=1000.0]
+2021- 11-17 16:04:39 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:89):89 - test add contrat success
+2021- 11-17 16:04:39 tn.esprit.spring.ContratTest.getAllTest(ContratTest.java:43):43 - entring to test getAllContrats
+2021- 11-17 16:09:17 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:87):87 - affichage c: Contrat [reference=24, dateDebut=Wed Nov 17 16:09:17 CET 2021, typeContrat=CDI, employe=null, salaire=1000.0]
+2021- 11-17 16:09:17 tn.esprit.spring.ContratTest.addandDeleteContratTest(ContratTest.java:89):89 - test add contrat success
+2021- 11-17 16:09:17 tn.esprit.spring.ContratTest.getAllTest(ContratTest.java:43):43 - entring to test getAllContrats
+2021- 11-17 16:09:17 tn.esprit.spring.ContratTest.getAllTest(ContratTest.java:61):61 - resultat[Contrat [reference=0, dateDebut=Wed Nov 17 16:09:17 CET 2021, typeContrat=CDD, employe=null, salaire=11.0], Contrat [reference=0, dateDebut=Wed Nov 17 16:09:17 CET 2021, typeContrat=CDI, employe=null, salaire=12.0], Contrat [reference=0, dateDebut=Wed Nov 17 16:09:17 CET 2021, typeContrat=SIVP, employe=null, salaire=13.0]]

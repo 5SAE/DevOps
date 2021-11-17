@@ -10,10 +10,10 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.log4j.Logger;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -36,7 +36,7 @@ public class ContratTest {
 	@MockBean
 	private ContratRepository cr;
 
-	private static final Logger l = LogManager.getLogger(ContratTest.class);
+	private static final Logger l = Logger.getLogger(ContratTest.class);
 
 	@Test
 	public void getAllTest() {
@@ -55,9 +55,10 @@ public class ContratTest {
 		c3.setDateDebut(new Date());
 		c3.setSalaire(13);
 		c3.setTypeContrat("SIVP");
-
 		when(cr.findAll()).thenReturn(Stream.of(c1, c2, c3).collect(Collectors.toList()));
+		
 		assertEquals(3, cs.getAllContrats().size());
+		l.info("resultat"+ Stream.of(c1, c2, c3).collect(Collectors.toList()));
 	}
 
 	@Test
