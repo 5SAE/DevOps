@@ -12,7 +12,7 @@ services:
       - MYSQL_ROOT_PASSWORD=roothouda
 
   web:
-    image: houdabettayeb/spring:v1
+    image: houdabettayeb/spring:latest
     container_name: timesheetweb
     ports:
       - 8089:8080
