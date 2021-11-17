@@ -78,7 +78,7 @@ pipeline {
     
         always { 
             echo 'I will always say Hello again!'
-            emailext (to: 'fekihmeyssen@gmail.com','meyssen.fekihhssinesnene@esprit.tn' ',
+            emailext (to: 'fekihmeyssen@gmail.com,meyssen.fekihhssinesnene@esprit.tn',
             replyTo: 'fekihmeyssen@gmail.com',
             subject: "Email Report from - '${env.JOB_NAME}' ",
             attachLog:true,
