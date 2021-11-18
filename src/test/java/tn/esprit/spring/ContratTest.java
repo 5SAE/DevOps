@@ -28,6 +28,9 @@ import tn.esprit.spring.services.IEmployeService;
 @SpringBootTest
 public class ContratTest {
 
+	
+	
+	
 	@Autowired
 	IContratService cs;
 	@Autowired
@@ -36,7 +39,7 @@ public class ContratTest {
 	@MockBean
 	private ContratRepository cr;
 
-	private static final Logger l = Logger.getLogger(ContratTest.class);
+    private static final Logger l = Logger.getLogger(ContratTest.class);
 
 	@Test
 	public void getAllTest() {
