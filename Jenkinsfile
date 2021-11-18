@@ -4,7 +4,6 @@ pipeline {
 
 
 
-
         maven 'MAVEN_HOME'
          jdk 'JDK_HOME'
     }
