@@ -82,7 +82,7 @@ pipeline {
             replyTo: 'fekihmeyssen@gmail.com',
             subject: "Email Report from - '${env.JOB_NAME}' ",
             attachLog:true,
-            body: readFile("C:/Program Files (x86)/Jenkins/workspace/timesheet_mission/Timesheet_DevOps/Mission.txt"));
+            body: readFile("C:/Program Files (x86)/Jenkins/workspace/devopsfinal/DevOps/formation.log"));
         }
     }
     
