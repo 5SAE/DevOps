@@ -29,8 +29,7 @@ public class DepartementTest {
 private  EntrepriseServiceImpl entrepriseservice ;
 @Autowired
 private  DepartementServiceImpl departementservice ;
-@Autowired
-private DepartementRepository departmentRep;
+
 private static final Logger l = LogManager.getLogger(DepartementTest.class);
 
 	 @Test

@@ -21,8 +21,7 @@ public class RestControlDepartement {
 	@Autowired
 	IDepartementService idepartementservice;
 	
-	 // http://localhost:8081/SpringMVC/servlet/ajouterDepartement
- 	//{"id":1,"name":"Telecom"}
+	
 
  	@PostMapping(value = "/ajouterDepartement")
  	@ResponseBody
