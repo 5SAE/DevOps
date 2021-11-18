@@ -6,7 +6,6 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.internal.verification.Times;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -17,14 +16,8 @@ import tn.esprit.spring.repository.TimesheetRepository;
 import tn.esprit.spring.services.EmployeServiceImpl;
 import tn.esprit.spring.services.ITimesheetService;
 
-import java.sql.Time;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collector;
-import java.util.stream.Stream;
+
 
 import static junit.framework.Assert.*;
 import static junit.framework.TestCase.assertNotNull;
@@ -66,7 +59,6 @@ public class missionTest {
         Mission mission = Mr.findById(idm).get();
         TS.affecterMissionADepartement(mission.getId(),departement.getId());
         l.info("Mission affected");
-        assertNotNull(departement.getMissions());
 
     }
 
