@@ -33,7 +33,7 @@ public class EmployeTest {
     private ContratRepository contratRepository;
     @Autowired
     EntrepriseServiceImpl entrepriseService;
-   // private final static Logger l = LogManager.getLogger(EmployeTest.class);
+    private final static Logger l = LogManager.getLogger(EmployeTest.class);
 
     @Test
   public  void ajoutEmploye() {
